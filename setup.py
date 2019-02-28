@@ -7,7 +7,8 @@ with io.open('README.rst', 'rt', encoding='utf8') as f:
 
 setup(
     name='PyUtils',
-    version='0.1.dev',
+    version='0.1.dev0',
+    url='toBeAdded',
     packages=['pyutils',],
     license='MIT',
     author='Nitin Gupta',
