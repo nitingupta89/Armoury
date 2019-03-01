@@ -1,4 +1,4 @@
-class PowerDict(self):
+class PowerDict(dict):
     def clone():
         pass
 
