@@ -13,9 +13,6 @@ class powerlist(list):
 
     detect = find
 
-    def findWhere(listOfDicts, props):
-        pass
-
     def filter(self, func):
         return [x for x in self if func(x)]
 
@@ -62,6 +59,9 @@ class powerlist(list):
         return sorted(self, key=lambda x: self._getattr(x, attr), reverse=reverse)
 
 #    def pluck(self):
+#        pass
+#
+#    def findWhere(listOfDicts, props):
 #        pass
 #
 #    def invoke(self, func, args):
