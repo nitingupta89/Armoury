@@ -1,4 +1,4 @@
-class PowerList(list):
+class powerlist(list):
     def in_batches_of(self, batch_size=1):
         for i in range(0, len(self), batch_size):
             yield self[i:i+batch_size]
@@ -36,11 +36,12 @@ class PowerList(list):
     def select(self, func):
         return [x for x in self if func(x)]
 
-    def flatten(self, flat_list=[]):
+    def flatten(self):
+        flat_list = []
         for x in self:
             if isinstance(x, list):
                 px = PowerList(x)
-                px.flatten(flat_list)
+                flat_list += px.flatten()
             else:
                 flat_list.append(x)
         return flat_list

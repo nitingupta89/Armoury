@@ -11,5 +11,10 @@
 
 __version__ = '0.1.dev3'
 
-from .list import PowerList
-from .dict import PowerDict
+import __builtin__
+
+from .list import powerlist
+from .dict import powerdict
+
+__builtin__.list = powerlist
+__builtin__.dict = powerdict
