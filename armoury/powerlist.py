@@ -53,6 +53,9 @@ class powerlist(list):
         random.shuffle(self)
 
     def sample(self, size):
+        '''
+        returns random sample of given size
+        '''
         return random.sample(self, size)
 
     def sort_by(self, attr, reverse=False):
