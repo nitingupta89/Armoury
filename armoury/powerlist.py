@@ -52,8 +52,8 @@ class powerlist(list):
         '''
         random.shuffle(self)
 
-    def sample(self):
-        return random.sample(self)
+    def sample(self, size):
+        return random.sample(self, size)
 
     def sort_by(self, attr, reverse=False):
         return sorted(self, key=lambda x: self._getattr(x, attr), reverse=reverse)
